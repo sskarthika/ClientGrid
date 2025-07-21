@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Signup</title>
+  <meta charset="UTF-8">
+  <title>Signup | Product Dashboard</title>
   <meta name="description" content="Signup page for product dashboard">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h2>Signup</h2>
-  <form id="signupForm">
-    <input id="name" placeholder="Full Name" required>
-    <input type="email" id="email" placeholder="Email" required>
-    <input type="password" id="password" placeholder="Password" required>
-    <button type="submit">Signup</button>
-  </form>
-  <p>Already have an account? <a href="login.html">Login</a></p>
+
+  <div class="container">
+    <div class="signup-card">
+      <h2><i class="fa fa-user-plus"></i> Create Account</h2>
+      <form id="signupForm">
+        <div class="form-group">
+          <input id="name" type="text" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input id="email" type="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+          <input id="password" type="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+      <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </div>
+
   <script src="js/auth.js"></script>
 </body>
 </html>
